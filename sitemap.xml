@@ -2,13 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://waynemaranga.github.io/posts/demopost/</loc>
-    <lastmod>2024-03-27T15:16:27+03:00</lastmod>
+    <loc>https://waynemaranga.github.io/posts/demopost_2/</loc>
+    <lastmod>2024-03-27T16:06:10+03:00</lastmod>
   </url><url>
     <loc>https://waynemaranga.github.io/posts/</loc>
-    <lastmod>2024-03-27T15:16:27+03:00</lastmod>
+    <lastmod>2024-03-27T16:06:10+03:00</lastmod>
   </url><url>
     <loc>https://waynemaranga.github.io/</loc>
+    <lastmod>2024-03-27T16:06:10+03:00</lastmod>
+  </url><url>
+    <loc>https://waynemaranga.github.io/posts/demopost/</loc>
     <lastmod>2024-03-27T15:16:27+03:00</lastmod>
   </url><url>
     <loc>https://waynemaranga.github.io/categories/</loc>
