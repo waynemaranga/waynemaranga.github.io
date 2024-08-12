@@ -51,9 +51,7 @@
     "prettier-plugin-astro": "^0.13.0",
     "simple-git-hooks": "^2.11.1"
   },
-  "simple-git-hooks": {
-    "pre-commit": "npx lint-staged"
-  },
+
   "lint-staged": {
     "*": "npm run lint:fix"
   }

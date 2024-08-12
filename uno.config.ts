@@ -47,8 +47,11 @@ export default defineConfig({
   ],
   transformers: [transformerDirectives(), transformerVariantGroup()],
   safelist: [
+    // https://unocss.dev/presets/icons#icons-preset
+    // https://icones.js.org/
     'i-ri-file-list-2-line',
-    'i-carbon-campsite',
+    'i-carbon-campsite', // https://icones.js.org/collection/carbon?icon=carbon:campsite
+    'i-carbon-ai',
     'i-simple-icons-github',
     'i-simple-icons-x',
     'i-simple-icons-linkedin',
