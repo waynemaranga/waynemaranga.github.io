@@ -1,0 +1,27 @@
+---
+import { resumedata } from "./data";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import ListResume from "@/components/ListResume.vue";
+---
+
+<BaseLayout title="My Resume" description="List of projects that I am proud of">
+  <h1 class="mb-10 text-title">Resume</h1>
+  <div mb-16 sm:mb-24>
+    {
+      resumedata.length > 0 && (
+        <div>
+          {resumedata.map((i) => (
+            <div mb-10>
+              <h2 class="select-none relative h20 pointer-events-none">
+                <span class="text-3.2em color-transparent font-bold text-stroke-1.5 text-stroke-hex-aaa op35 dark:op20 absolute top-0">
+                  {i.title}
+                </span>
+              </h2>
+              <ListResume list={i.resumedata} />
+            </div>
+          ))}
+        </div>
+      )
+    }
+  </div>
+</BaseLayout>
