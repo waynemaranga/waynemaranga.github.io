@@ -805,6 +805,7 @@ footer {
 /* About cards */
 .about-card {
   background: rgba(255, 255, 255, 0.95);
+  /* background: #; */
   border-radius: 12px;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
@@ -932,6 +933,36 @@ h3 {
   font-family: "Radio Canada", sans-serif;
   font-style: bold;
 }
+
+/* Green, bold text with doodles */
+.decorated-h3 {
+  color: #133931; /* Dark green */
+  font-weight: 800; /* Heavy bold */
+  position: relative;
+  display: inline-block;
+  padding: 0 20px;
+}
+
+/* Add doodles before and after */
+.decorated-h3::before,
+.decorated-h3::after {
+  content: "✦"; /* Decorative doodle */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fda715; /* Gold doodle */
+  font-size: 20px;
+  opacity: 0.8;
+}
+
+.decorated-h3::before {
+  left: -25px;
+}
+
+.decorated-h3::after {
+  right: -25px;
+}
+
 h2 {
   font-family: "Radio Canada", sans-serif;
   font-style: bold;
