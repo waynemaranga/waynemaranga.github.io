@@ -38,7 +38,8 @@ body {
   position: relative;
   min-height: 100vh;
   overflow: hidden;
-  background: linear-gradient(rgba(19, 57, 49, 0.9), rgba(19, 57, 49, 0.9)),
+  background:
+    linear-gradient(rgba(19, 57, 49, 0.9), rgba(19, 57, 49, 0.9)),
     url("./jpeg/tiger-print.jpeg") no-repeat center center/cover !important;
   background-attachment: fixed;
   color: #133931;
@@ -52,7 +53,8 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(45deg, #133931 25%, transparent 25%) -50px 0,
+  background:
+    linear-gradient(45deg, #133931 25%, transparent 25%) -50px 0,
     linear-gradient(-45deg, #133931 25%, transparent 25%) -50px 0,
     linear-gradient(45deg, transparent 75%, #133931 75%),
     linear-gradient(-45deg, transparent 75%, #133931 75%);
@@ -63,10 +65,18 @@ body {
 
 @keyframes patternMove {
   0% {
-    background-position: 0 0, 0 0, 50px 50px, 50px 50px;
+    background-position:
+      0 0,
+      0 0,
+      50px 50px,
+      50px 50px;
   }
   100% {
-    background-position: 100px 0, 100px 0, 150px 50px, 150px 50px;
+    background-position:
+      100px 0,
+      100px 0,
+      150px 50px,
+      150px 50px;
   }
 }
 
@@ -209,11 +219,13 @@ body {
 /* Card Styling */
 .card {
   position: relative;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   border: none;
   border-radius: 20px;
   background: linear-gradient(145deg, #ffffff, #f5f5f5);
-  box-shadow: 8px 8px 16px #e6e6e6, -8px -8px 16px #ffffff;
+  /* box-shadow: 8px 8px 16px #e6e6e6, -8px -8px 16px #ffffff; */
   overflow: hidden;
 }
 
@@ -278,7 +290,9 @@ body {
 /* Chancellor's Agenda Styling */
 .agenda-card {
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   border: none;
 }
 
@@ -303,8 +317,7 @@ body {
 /* Countdown Section */
 .countdown-section {
   position: relative;
-  background: url("./jpeg/DSC05579.jpg") no-repeat center
-    center/cover;
+  background: url("./jpeg/DSC05579.jpg") no-repeat center center/cover;
   padding: 80px 0;
   background-attachment: fixed;
 }
@@ -372,7 +385,9 @@ body {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   color: white;
   text-align: center;
   cursor: pointer;
@@ -436,13 +451,6 @@ body {
   transform: scale(1.1);
   opacity: 1;
 }
-
-
-
-
-
-
-
 
 /* Section Rounding and Spacing */
 section {
@@ -607,7 +615,8 @@ section {
 
 header {
   /* Layer a semi-transparent dark green over the tiger image */
-  background: linear-gradient(rgba(19, 57, 49, 0.9), rgba(19, 57, 49, 0.9)),
+  background:
+    linear-gradient(rgba(19, 57, 49, 0.9), rgba(19, 57, 49, 0.9)),
     url("./jpeg/tiger-print.jpeg") no-repeat center center/cover !important;
   /* background-attachment: fixed; */
 }
@@ -620,7 +629,8 @@ header nav a {
 }
 
 footer {
-  background: linear-gradient(rgba(19, 57, 49, 0.9), rgba(19, 57, 49, 0.9)),
+  background:
+    linear-gradient(rgba(19, 57, 49, 0.9), rgba(19, 57, 49, 0.9)),
     url("./jpeg/tiger-print.jpeg") no-repeat center center/cover !important;
   /* background-attachment: fixed; */
 }
@@ -635,7 +645,8 @@ footer {
 /* Leadership Slider Styles */
 .leadership-section {
   padding: 60px 0;
-  background-color: #f5f5f5;
+  /* background-color: #f5f5f5; */
+  background-color: #fff6ea;
 }
 
 .leadership-slider {
@@ -750,21 +761,21 @@ footer {
   .leadership-slider .carousel-control-next {
     width: 10%;
   }
-  
+
   .leadership-slider .row {
     flex-direction: column;
     text-align: center;
   }
 }
 
-
 /* About Sections Wrapper */
 .about-sections-wrapper {
   display: flex;
   flex-wrap: wrap;
   padding: 4rem 0;
-  background: linear-gradient(rgba(19, 57, 49, 0.8), rgba(19, 57, 49, 0.8)),
-    url("./jpeg/DSC_2249.jpg") no-repeat center center/cover;
+  background:
+    linear-gradient(rgba(19, 57, 49, 0.8), rgba(19, 57, 49, 0.8)),
+    url("./dsc/esa-committee.jpg") no-repeat center center/cover;
   background-attachment: fixed;
 }
 
@@ -790,7 +801,6 @@ footer {
   height: auto;
   object-fit: contain;
 }
-
 
 /* About cards */
 .about-card {
@@ -837,22 +847,31 @@ footer {
   object-fit: contain;
 }
 
-/* Carousel controls */
-#esaCarousel .carousel-indicators {
-  bottom: -3rem;
-}
-
+/* Positioning for left and right slider buttons */
 #esaCarousel .carousel-control-prev,
 #esaCarousel .carousel-control-next {
   width: 10%;
   filter: invert(1);
+  display: flex !important; /* Force visibility */
+  justify-content: center;
+  align-items: center;
+  opacity: 1 !important; /* Ensure they are not transparent */
+  z-index: 10; /* Keep above other elements */
+  /* background-color: #133931; */
 }
 
+/* Ensure icons are properly styled */
 #esaCarousel .carousel-control-prev-icon,
 #esaCarousel .carousel-control-next-icon {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #133931;
+  color: #133931;
+  border: none;
   border-radius: 50%;
-  padding: 10px;
+  width: 30px;
+  height: 30px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 /* Responsive design */
@@ -860,12 +879,12 @@ footer {
   .about-sections-wrapper {
     flex-direction: column;
   }
-  
+
   .about-card .card-body {
     flex-direction: column;
     text-align: center;
   }
-  
+
   .profile-image {
     margin-bottom: 1rem;
   }
@@ -887,7 +906,7 @@ footer {
 
 .exhibitor-img {
   height: 80px; /* Uniform height */
-  width: auto;  /* Maintain aspect ratio */
+  width: auto; /* Maintain aspect ratio */
   object-fit: contain;
 }
 
@@ -900,3 +919,25 @@ footer {
   }
 }
 
+p {
+  font-family: "Inter", sans-serif;
+  font-size: large;
+}
+
+h1 {
+  font-family: "Radio Canada", sans-serif;
+}
+
+h3 {
+  font-family: "Radio Canada", sans-serif;
+  font-style: bold;
+}
+h2 {
+  font-family: "Radio Canada", sans-serif;
+  font-style: bold;
+}
+
+h5 {
+  font-family: "Radio Canada", sans-serif;
+  font-style: bold;
+}
